@@ -1,0 +1,147 @@
+body{
+	background-color:  #02010a;
+	font-family: 'Dancing Script';
+}
+img{
+	box-shadow: 2px 2px #02010a;
+}
+
+
+
+header{
+	background-color: #5b7989;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+
+
+header #divMenu > a{
+	color: white;
+	text-shadow: #02010a 2px;
+	font-size: 1.3em;
+}
+.enlacePaginaActual{
+	text-decoration: none;
+}
+
+#artPrincipal{
+	background-color:  #82c3a6;
+	text-align: center;
+}
+
+
+/*Estilos para imagen*/
+#artPrincipal > img{
+	width: 50%;
+}
+
+
+#artSecundaria > div > a > img{
+	width: 60%;
+	border: 1px;
+}
+
+/*Efectos hover*/
+#imgPaisaje:hover {
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+	transition-duration: 0.5s;
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px;
+
+}
+
+#imgRetrato:hover {
+	transition-duration: 0.5s;
+	transform: translate(5px, -20px);
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px;
+}
+/*para pie de pagina*/
+
+
+footer > div > ul{
+	list-style:none;
+}
+
+
+
+@media (min-width: 900px) {
+	header{
+		display: flex;
+		flex-direction: row;
+	}
+	header #divTitulo{
+		text-align: left;
+		text-shadow: #02010a 2px;
+	}
+	header #divMenu{
+		text-align: right;
+		padding: 1em;
+		
+	}
+	header #divTitulo, #divMenu{
+		width: 50%;	
+	}
+
+	#artSecundaria{
+		background-color: #d5c75f;
+		display: flex;
+		flex-direction: row;
+	}
+	#artSecundaria > div{
+		width: 50%;
+		text-align: center;
+	}
+	footer{
+		background-color:  #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+		display: flex;
+		flex-direction: row;
+	}
+	footer > div{
+		width: 25%;
+	}
+
+
+}
+
+@media (max-width: 899px) {
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	header #divTitulo{
+		text-align: center;
+		text-shadow: #02010a 2px;
+	}
+	header #divMenu{
+		text-align: center;
+		padding: 1em;
+		
+	}
+
+	#artSecundaria{
+		background-color: #d5c75f;
+		display: flex;
+		flex-direction: column;
+	}
+	#artSecundaria > div{		
+		text-align: center;
+	}
+	footer{
+		background-color:  #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+		display: flex;
+		flex-direction: column;
+	}
+	footer > div{
+		text-align: center;
+	}
+	#artPrincipal > img{
+		width: 60%;
+	}
+}
